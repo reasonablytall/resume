@@ -1,0 +1,133 @@
+\documentclass[margin,line,11pt,letterpaper]{res}
+
+    \usepackage[colorlinks=false]{hyperref}
+    \hypersetup{
+        colorlinks=false,
+        linkcolor=blue,
+        filecolor=magenta,      
+        urlcolor=cyan,
+    }
+
+    % Side section header styling
+    \let\oldsection\section
+    \renewcommand{\section}[1]{\vspace{-2mm}\oldsection{\small\sc {#1}}}
+    
+\begin{document}
+\newsectionwidth{1in}
+
+\name{\makebox[\resumewidth]{{\LARGE Alex Aubuchon}\hfill \textit{\textmd{Be a person others look for to solve problems, and make waves.}}}}
+
+\address{114 Hemenway St Apt 3, Boston, MA 02115}
+
+\begin{resume}
+    \vspace{-7mm}
+    \section{Contact Information}
+    Phone: (978) 894-6108\hfill GitHub: \url{https://github.com/a-lxe}\\
+    Mail: \href{mailto:alex@alxe.me}{alex@alxe.me} \hfill Linkedin: \url{https://linkedin.com/in/a-lxe}
+    
+    
+    \section{Education}
+    
+    \begin{format}
+        \employer{l}\location{r}\\
+        \title{l}\dates{r}\\
+        \body\\
+    \end{format}
+    
+    \employer{\textbf{Northeastern University}}
+    \title{\textit{BS in Computer Science and Physics}}
+    \dates{\textit{September 2015 - Expected May 2019}}
+    \location{Boston, MA}
+    \begin{position}
+        \vspace{-3mm}\\
+        Coursework: Advanced Algorithms, Theory of Comp, NLP, Quantum Mechanics, Electronics\\
+        Extracurriculars: Tutor for Discrete Structures (2017), Upperclassman Tutor (2016) \\
+        GPA: 3.8/4.0
+    \end{position}
+    
+    \section{Work Experience}
+
+    \employer{\textbf{Draper Laboratories}}
+    \title{\textit{Software Engineer, Machine Intelligence Group}}
+    \dates{\textit{January 2017 - August 2017}}
+    \location{Cambridge, MA}
+    \begin{position}
+        \vspace{-3mm}\\
+        Involved in three projects applying skills across multiple disciplines including prosthetics, electronics, and machine learning:
+        \begin{list2}
+            \item Implemented the software interface in C\# to a neuro-stimulation device as part of the DARPA HAPTIX program.
+            Designed the next generation of the device using wirelessly controlled implants by working closely with the hardware and firmware teams. 
+            Proposed a solution to communicating the low-latency stimulation control over Bluetooth.
+            \item Performed research + experimentation into the novel uses of RF sensors on the spurious emissions of electronic devices.
+            Used Arduino/C++ for hardware and Python for testing.
+            \item Integrated new features with MatLab into a machine learning model designed to use human biometrics to non-invasively detect malintent.
+        \end{list2}
+    \end{position}
+    
+    \employer{\textbf{MIT Media Lab}}
+    \title{\textit{Assistant Researcher, Changing Places Lab}}
+    \dates{\textit{July 2016 - Present}}
+    \location{Cambridge, MA}
+    \begin{position}
+        \vspace{-3mm}\\
+        Researched and designed ML models in Python for quickly predicting the traffic and solar power potential of a model city.
+        Implemented searching in Python over possible changes to the city for a mock intelligence to offer suggestions to the user to optimize these metrics (and others).
+        Developed a Unity/C\# application for real-time visualization of the model city.
+    \end{position}
+    
+    \section{Projects + Competitions}
+    
+    \begin{format}
+        \title{l}\dates{r}\\
+        \body\\
+    \end{format}
+    
+    \title{\textbf{HackMIT: PacTravel}}
+    \dates{\textit{September 2017}}
+    \begin{position}
+        \vspace{-3mm} \\
+        Led the development of a webapp in Typescript where users play PacMan on Google Maps while the places they visit are logged into a data-rich itinerary for use afterwards in real life.
+    \end{position}
+    
+    \title{\textbf{HackTheMachine - 2nd Place}}
+    \dates{\textit{September 2017}}
+    \begin{position}
+        \vspace{-3mm} \\
+        Won second place in a data science hackathon to use Navy ship sensors to improve readiness. 
+        Used correlations and PCA in Python to improve human readability of the high dimensional stream.
+    \end{position}
+    
+    \title{\textbf{Google IO Firebass}}
+    \dates{\textit{July 2016, May 2017}}
+    \begin{position}
+        \vspace{-3mm}\\
+        Won a global ARG competition to be the first to chase down the Firebase Firebass by solving puzzles as it fled through the web.
+        Received tickets to Google IO 2017, attended May.
+    \end{position}
+    
+    \title{\textbf{HackHarvard: Storeel}}
+    \dates{\textit{October 2016}}
+    \begin{position}
+        \vspace{-3mm}\\
+        Prototyped a web application in AngularJS that uses Microsoft Azure NLP APIs to turn written stories into picture books by analyzing segments of text and finding a relavant image for each.
+    \end{position}
+    
+    
+    \section{Computer Skills}
+    \renewcommand{\linespread}{5}
+    \textbf{Languages}:
+    \textit{Lots-} C\#; Python; Java;
+    \textit{Some-} C/C++; Racket; Matlab; Verilog;
+    \textit{Little-} Julia \\
+    \textbf{WebDev}:
+    REST/Websocket APIs; TypeScript; AngularJS; NodeJS; HTML/CSS; Three.js \\
+    \textbf{Tools}:
+    Unity; Mathematica; Photoshop; Blender (CAD); Microsoft Office \\
+    \textbf{Misc}:
+    Git; (Arch)Linux; Vim
+     
+    
+    \section{Interests}
+    Gaming; Rock Climbing; Transhumanism; CS/Physics Theory; Computer Design; Electronics
+\end{resume}
+\end{document}
