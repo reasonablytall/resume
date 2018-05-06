@@ -38,7 +38,7 @@ before_deploy:
   # Set up git user name and tag this commit
   - git config --local user.name "A-lxe"
   - git config --local user.email "alex@alxe.me"
-  - git tag "latest"
+  - git tag -f "latest"
 deploy:
   provider: releases
   api_key:
