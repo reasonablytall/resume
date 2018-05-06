@@ -34,11 +34,6 @@ script: # Change working directory each time so including files will work. Chang
   - tectonic ./Resume_Alex-Aubuchon.tex
   - cd ../
 
-before_deploy:
-  # Set up git user name and tag this commit
-  - git config --local user.name "A-lxe"
-  - git config --local user.email "alex@alxe.me"
-  - git tag -f "latest"
 deploy:
   provider: releases
   api_key:
@@ -46,5 +41,6 @@ deploy:
   file: ./src/Resume_Alex-Aubuchon.pdf
   skip_cleanup: true
   on:
+    tags: true
     repo: A-lxe/resume
     branch: master
