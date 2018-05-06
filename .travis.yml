@@ -46,6 +46,5 @@ deploy:
   file: ./src/Resume_Alex-Aubuchon.pdf
   skip_cleanup: true
   on:
-    tags: true
     repo: A-lxe/resume
     branch: master
