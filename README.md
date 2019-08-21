@@ -1,4 +1,12 @@
-[![Build Status](https://api.travis-ci.org/A-lxe/resume.svg)](https://travis-ci.org/A-lxe/resume)
+This is my _resume_. You might see it referenced on my [site](https://aub.dev).
 
-Download the pdf [here](https://github.com/A-lxe/resume/releases/latest)
+Styles are Copyright (c) 1988 by Michael DeCorte. See [style.cls](./style.cls)
+for more info.
 
+Build with your favorite latex distribution:
+
+```sh
+pdflatex ./resume.pdf
+```
+
+Download the pdf [here](./resume.pdf)
